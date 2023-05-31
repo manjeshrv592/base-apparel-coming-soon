@@ -58,7 +58,7 @@ img {
 
 /***********************************/
 /* Main Layout */
-body {
+.main {
   display: grid;
   grid-template-columns: 3.2rem 1fr 3.2rem;
   grid-template-rows: 8.4rem max-content max-content;
@@ -238,6 +238,9 @@ body {
   body {
     font-size: 1.6rem;
     line-height: 2.8rem;
+  }
+
+  .main {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 3.2rem 1fr 1fr 3.2rem;
@@ -303,7 +306,7 @@ body {
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  body {
+  .main {
     grid-template-columns: 1fr 66.4rem minmax(61rem, 1fr);
   }
 }
